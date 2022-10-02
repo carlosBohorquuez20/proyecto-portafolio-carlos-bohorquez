@@ -18,19 +18,36 @@ body{
   background-color: var(--main-color);
   font-family: 'Rubik', sans-serif;
 }
-
-.desktop-menu{
+/*.desktop-menu{
   width: 100%;
   position: fixed;
   top: 0;
   background-color: var(--main-color);
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-end;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 10px;
 }
+*/
 
+.grid-separator-menu{
+  width: 100%;
+  background-color: var(--main-color);
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 4fr 8fr 1.3fr;
+}
+
+.desktop-menu{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+}
 
 /*Mobile header*/
 @media (max-width: 480px) {
@@ -40,6 +57,7 @@ body{
 }
 
 .desktop-menu a{
+  margin: auto;
   flex:0 1 auto;
   font-size: 18px;
   letter-spacing: 2px;
@@ -322,13 +340,13 @@ h2{
   align-items: center;
   gap: 70px;
   border-bottom: 1px solid rgba(101, 101, 101, 0.3);
-  margin:0;
+  margin-top:10px;
 }
 
 /*caja de experiencia ajustado a mobile*/
 @media (max-width: 480px) {
   .experience-boxes{
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content:flex-start;
     align-items: center;
@@ -341,13 +359,13 @@ h2{
   justify-content:space-around;
   align-items: center;
   gap: 70px;
-  margin:0;
+  margin-top: 10px;
 }
 
 /*caja de experiencia sin border bottom ajustado a mobile*/
 @media (max-width: 480px) {
   .experience-boxes-no-border-bottom{
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content:flex-start;
     align-items: center;
