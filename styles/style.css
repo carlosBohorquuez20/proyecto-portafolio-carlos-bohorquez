@@ -18,19 +18,7 @@ body{
   background-color: var(--main-color);
   font-family: 'Rubik', sans-serif;
 }
-/*.desktop-menu{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background-color: var(--main-color);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-*/
-
+/*ajustar el menu acorde al diseño*/
 .grid-separator-menu{
   width: 100%;
   background-color: var(--main-color);
@@ -41,7 +29,7 @@ body{
   display: grid;
   grid-template-columns: 4fr 8fr 1.3fr;
 }
-
+/*Menu de escritorio visible*/
 .desktop-menu{
   width: 100%;
   display: flex;
@@ -49,13 +37,13 @@ body{
   gap: 20px;
 }
 
-/*Mobile header*/
+/*Menu de escritorio no visible en mobile*/
 @media (max-width: 480px) {
   .desktop-menu{
     display: none;    
   }
 }
-
+/*texto de la barra de menu*/
 .desktop-menu a{
   margin: auto;
   flex:0 1 auto;
@@ -64,7 +52,6 @@ body{
   text-decoration: none;
   font-weight: 400;
   color: var(--secundary-color);
-
 }
 
 /*texto de menu ajustado amobile*/
@@ -73,12 +60,12 @@ body{
     font-size: 16px;
   }
 }
-
+/*Menu mobile no visible para escritorio*/
 .mobile-menu{
   display: none;
 }
 
-/*Mobile menu*/
+/*Menu mobile visible para celulares*/
 @media (max-width:480px) {
   .mobile-menu{
     width: 100%;
@@ -88,7 +75,7 @@ body{
     align-items: flex-end;
   }
 }
-
+/*Icono de rayas o hamburguesa*/
 .menu-hamburguesa {
   width: 40px;
   height: 40px;
@@ -171,7 +158,7 @@ body{
   font-size: 100px;
 }
 
-/*h1 del header mobile*/
+/*Texto del titulo h1 del header mobile*/
 @media (max-width: 480px) {
   .header-content h1{
     margin-top: 10px;
@@ -188,6 +175,7 @@ body{
   justify-content: center;
   gap: 150px;
 }
+
 /*icnonos del header separados para mobile*/
 @media (max-width: 480px) {
   .icons{
@@ -198,13 +186,14 @@ body{
 .img-icons{
   width: 130px;
 }
-/*h2 del header mobile*/
+
+/*imagenes de iconos ajustadas a mobile*/
 @media (max-width: 480px) {
   .img-icons{
     width: 50px;
   }
 }
-
+/*Seccion sobre mi escritorio*/
 .about-content{
   width: 100% ;
   height: 50%;
@@ -213,7 +202,7 @@ body{
   align-items: center;
 }
 
-/*h2 del body mobile*/
+/*Seccion sobre mi mobile*/
 @media (max-width: 480px) {
   .about-content{
     width: 100% ;
@@ -222,7 +211,6 @@ body{
   }
 }
 
-
 h2{
   color: var(--other-color);
   font-weight: 600;
@@ -230,7 +218,7 @@ h2{
   letter-spacing: 1px;
 }
 
-/*h2 del body mobile*/
+/*Texto de h2 del body mobile*/
 @media (max-width: 480px) {
   h2{
     color: var(--other-color);
@@ -250,7 +238,7 @@ h2{
   text-align: center;
 }
 
-/*p del body mobile*/
+/*Texto de la etiqueta p del body mobile*/
 @media (max-width: 480px) {
   .about-content p{
     width: 100%;
@@ -272,6 +260,7 @@ h2{
   justify-content: center;
 }
 
+/*Separa las 2 columnas de las habilidades*/
 .ability-box{
   width: 20%;
   height: 50%;
@@ -332,7 +321,7 @@ h2{
   justify-content: center;
   align-items: center;
 }
-
+/*Separa el año y el texto*/
 .experience-boxes{
   width: 50%;
   display: flex;
@@ -353,6 +342,7 @@ h2{
   }
 }
 
+/*Ultimo año y texto sin border abajo*/
 .experience-boxes-no-border-bottom{
   width: 50%;
   display: flex;
@@ -443,6 +433,7 @@ h2{
   }
 }
 
+/*Ajusta las imagenes del protafolio*/
 .portafolio-images{
   width: 100%;
   height: 50%;
@@ -464,6 +455,7 @@ h2{
   }
 }
 
+/*Tamño de imagenes del portafolio*/
 .image-portafolio{
   width: 500px;
 }
@@ -494,6 +486,7 @@ h2{
   }
 }
 
+/*Separa el celular y el correo*/
 .contact-separator{
   width: 100%;
   display: flex;
@@ -511,6 +504,7 @@ h2{
   }
 }
 
+/*Separa en columnas el la parte del numero de celular*/
 .contact-icons-boxes{
   display: flex;
   flex-direction: column;
