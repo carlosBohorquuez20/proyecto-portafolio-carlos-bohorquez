@@ -12,6 +12,7 @@ html{
 }
 
 body{
+  overflow-x: hidden;
   margin: 20px ;
   width: calc(100% - 40px);
   height: calc(50% - 40px);
@@ -43,6 +44,14 @@ body{
     display: none;    
   }
 }
+
+/*Menu de escritorio no visible en ipad*/
+@media (max-width: 768px) {
+  .desktop-menu a{
+    display: none;    
+  }
+}
+
 /*texto de la barra de menu*/
 .desktop-menu a{
   margin: auto;
@@ -60,9 +69,21 @@ body{
     font-size: 16px;
   }
 }
+
 /*Menu mobile no visible para escritorio*/
 .mobile-menu{
   display: none;
+}
+
+/*Menu ipad visible*/
+@media (max-width: 768px) {
+  .mobile-menu{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
 
 /*Menu mobile visible para celulares*/
@@ -75,12 +96,20 @@ body{
     align-items: flex-end;
   }
 }
+
 /*Icono de rayas o hamburguesa*/
 .menu-hamburguesa {
   width: 40px;
   height: 40px;
 }
 
+.desktop-image{
+  display:flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 40%;
+
+}
 /*imagen perfil desktop no visible en mobile*/
 @media (max-width: 480px) {
   .desktop-image{
@@ -98,6 +127,7 @@ body{
   .mobile-image{
     display:flex;
     margin-bottom: 20px;
+    border-radius: 40%;
 }
 }
 
@@ -158,6 +188,13 @@ body{
   font-size: 100px;
 }
 
+/*texto h1 para ipad*/
+@media (max-width: 768px) {
+  .header-content h1{
+    font-size: 60px;
+  }
+}
+
 /*Texto del titulo h1 del header mobile*/
 @media (max-width: 480px) {
   .header-content h1{
@@ -187,12 +224,20 @@ body{
   width: 130px;
 }
 
+/*imagenes de iconos ajustadas a ipad*/
+@media (max-width: 768px) {
+  .img-icons{
+    width: 50px;
+  }
+}
+
 /*imagenes de iconos ajustadas a mobile*/
 @media (max-width: 480px) {
   .img-icons{
     width: 50px;
   }
 }
+
 /*Seccion sobre mi escritorio*/
 .about-content{
   width: 100% ;
@@ -259,7 +304,43 @@ h2{
   align-items: center;
   justify-content: center;
 }
+/*vector derecha*/
+.circulo-vector-derecha{
+  z-index: -1;
+  width: 100%;
+  right: -2%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 
+.circular-derecha-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.circular-derecha-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.circular-derecha-3{
+  border: 1px solid gray;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
 /*Separa las 2 columnas de las habilidades*/
 .ability-box{
   width: 20%;
@@ -420,6 +501,43 @@ h2{
   align-items: center;
   
 }
+/*vector izquierdo*/
+.circulo-vector-izquierda{
+  z-index: -1;
+  width: 100%;
+  left: -4%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.circular-izquierda-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.circular-izquierda-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+}
+
+.circular-izquierda-3{
+  border: 1px solid gray;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
 
 /*contenido de portaflio mobile*/
 @media (max-width: 480px) {
@@ -457,7 +575,7 @@ h2{
 
 /*Tamño de imagenes del portafolio*/
 .image-portafolio{
-  width: 500px;
+  width: 400px;
 }
 
 /*tamaño de imagenes del portafolio ajustadas a mobile*/
